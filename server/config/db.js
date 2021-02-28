@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import colors from 'colors'
 //import mogooose f
 //create a function funtion
 
@@ -10,10 +11,10 @@ const ConnectDB = async ()=>{
 			useCreateIndex: true
 		})
 
-		console.log(`connected to the database by ${con.connection.host}`)
+		console.log(`connected to the database by ${con.connection.host}`.green.underline)
 
 	}catch(e) {
-       console.log(`error ${e.message}`)
+       console.log(`error ${e.message}`.red.underline)
        process.exit(1)
 	}
 
