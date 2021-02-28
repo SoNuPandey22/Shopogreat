@@ -1,10 +1,12 @@
 //entry point
 import express from 'express'
 import dotenv from 'dotenv'
+import ConnectDB from './config/db.js'
 import product from './data/product.js'
 
 
 dotenv.config()
+ConnectDB()
 const app = express()
 
 app.get('/',(req, res) => {

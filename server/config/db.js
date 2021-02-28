@@ -1,15 +1,22 @@
 import mongoose from 'mongoose'
+//import mogooose f
+//create a function funtion
 
-const ConnectMongoDB = async ()=>{
+const ConnectDB = async ()=>{
 	try{
-		cost con = await mongoose.connect(process.env.MONGO_URI, {
+		const con = await mongoose.connect(process.env.MONGO_URI, {
 			useUnifiedTopology: true,
 			useNewUrlParser:true,
 			useCreateIndex: true
 		})
 
-	}catch(e) {
+		console.log(`connected to the database by ${con.connection.host}`)
 
+	}catch(e) {
+       console.log(`error ${e.message}`)
+       process.exit(1)
 	}
 
 }
+
+export default ConnectDB
