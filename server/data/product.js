@@ -1,6 +1,5 @@
 const products = [
 {
- _id: '1',
  name: 'Airpods Wireless Bluetooth Headphones',
  image: '/images/earpod.jpeg',
  description: 'Bluetooth Technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immertive listening experience and built in mic allows you to take calls while working',
@@ -12,7 +11,6 @@ const products = [
  numReviews: 5,
 },
 {
- _id: '2',
  name: 'Iphone11 Pro 256GB Memory',
  image: '/images/Iphone11.jpeg',
  description: 'Introducing new iPhone11 Pro which will change your attitue in the world and can add 5 star to your style and will make more impression on your loved one',
@@ -25,7 +23,6 @@ const products = [
 },
 
 {
- _id: '3',
  name: 'Lamps Lighting your life',
  image: '/images/lamp.jpeg',
  description: 'This lamp is gonna spread more light in your life and darkness will vanish from yorr life forever',
@@ -38,7 +35,6 @@ const products = [
 },
 
 {
- _id: '4',
  name: 'HP 840 G3 Elitebook',
  image: '/images/hpelite.jpeg',
  description:'Lightweight Laptop and cheap in price comes to save your from hassel life and also it has core i5 and 256gb of ram',
@@ -51,7 +47,6 @@ const products = [
 },
 
 {
- _id: '5',
  name: 'Sony Telivision 32',
  image: '/images/SonYTV.jpeg',
  description: 'audio offers immertive listening experience and built in mic allows you to take calls while working',
@@ -64,7 +59,6 @@ const products = [
 },
 
 {
- _id: '6',
  name: 'Dish Airtel digital TV',
  image: '/images/dish.jpeg',
  description: 'Bluetooth Technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immertive listening experience and built in mic allows you to take calls while working',
