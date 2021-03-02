@@ -5,19 +5,19 @@ const users = [
  {
    name: "admin",
    email: "admin@shopogreat",
-   password: bcrypt.hashSync('1234',10)
+   password: bcrypt.hashSync('1234',10),
    isAdmin:true
  },
  {
-   name: "User_2",
-   email: "user2@shopogreat",
+   name: "Sonu",
+   email: "sonu@shopogreat",
    password: bcrypt.hashSync('123434',10)
  
  },
  {
-   name: "3",
-   email: "user3@shopogreat",
-   password: bcrypt.hashSync('123434',10)
+   name: "Monu",
+   email: "monu@shopogreat",
+   password: bcrypt.hashSync('12343443',10)
    
  }
 

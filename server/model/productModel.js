@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-	imgage: {
+	image: {
 		type: String,
 		required: true
 	},
@@ -45,7 +45,7 @@ const productSchema = new mongoose.Schema({
 	},
 	numReview:{
 		type: Number,
-		required: true
+		required: true,
 		default: 0
 	},
 	price: {
@@ -58,7 +58,7 @@ const productSchema = new mongoose.Schema({
 		required: true,
 		default: 0
 	}
-}, timestamps: true)
+}, {timestamps:true})
 
 const Product = mongoose.model("Product",productSchema)
 
