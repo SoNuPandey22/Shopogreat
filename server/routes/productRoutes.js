@@ -18,12 +18,15 @@ router.get('/',asyncHandler (async(req,res) =>{
 //access    public
 //single route to get the product by using its id
 router.get('/:id', asyncHandler (async (req,res) =>{
-	try{
     var product = await Product.findById(req.params.id)
-    }catch (e) {
-    	res.json({message: "Product not found"})
+    
+    if(product) {
+    	res.json(product)
+    } else {
+    	res.status(404)
+    	throw new Error('Product not found')
     }
-    res.send(product)
+    
 	
 }))
 

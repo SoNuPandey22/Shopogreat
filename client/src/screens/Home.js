@@ -7,12 +7,12 @@ import axios from 'axios'
 const Home = () => {
    //this will take the two parameter one name of and other function
    //whatever want to set can pass into the useState parenthesis
-   const [products, setProduct] = useState([])
+   const [product, setProduct] = useState([])
 
 // whatever found on the provided linke the data is assign to the content
    useEffect(()=>{
       const fetchProducts = async () =>{
-        const { data } = await axios.get('/api/product')
+        const { data } = await axios.get('/api/products')
 
 //after fetching the data from teh server assign it to the variable crated by using useState
         setProduct(data)
@@ -25,7 +25,7 @@ const Home = () => {
        <>
         <h1>Latest Products</h1>
         <Row>
-           {products.map(product=>(
+           {product.map(product=>(
              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                 <Product product={product}/> 
                  
